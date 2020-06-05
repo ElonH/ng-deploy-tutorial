@@ -55,7 +55,8 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "aot": true
             }
           }
         },
@@ -120,7 +121,11 @@
         },
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
-          "options": {}
+          "options": {
+            "baseHref": "/ng-deploy-tutorial/",
+            "repo": "https://github.com/ElonH/ng-deploy-tutorial.git",
+            "noSilent": true
+          }
         }
       }
     }
