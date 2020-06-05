@@ -117,8 +117,13 @@
               "devServerTarget": "ng-deploy-tutorial:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "ng-deploy-tutorial"
 }
